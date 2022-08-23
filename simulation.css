@@ -1,0 +1,49 @@
+body
+{
+	background-color: black;
+	display: flex;
+}
+
+#content
+{
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+	height: 560px;
+	width: 100%;
+	background-image: linear-gradient(to bottom, black , red);
+}
+
+#simulation
+{
+	background-color: white;
+	border: 2px solid black;
+	height: 400px;
+	width: 800px;
+	margin-top: 80px;
+	margin-left: 50px;
+	position: relative;
+}
+
+.point
+{
+	border-radius: 50%;
+	position: absolute;
+}
+
+.line
+{
+	transform-origin: top;
+	transform: rotate(calc(var(--rotation)*-1deg));
+	position: absolute;
+}
+
+.line1
+{
+	transform-origin: top;
+	transform: rotate(calc(var(--rotation)*1deg));
+	position: absolute;
+}
+
+
+
